@@ -65,7 +65,7 @@ body {
   z-index: -1000;
 }
 
-.abbotts-booby, #abbotts-booby {
+.abbotts-booby {
   position: absolute;
   top: 31em;
   left: 85em;
