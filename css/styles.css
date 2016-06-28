@@ -3,23 +3,38 @@
   -moz-box-sizing: inherit;
   box-sizing: inherit;
   }
-
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: white;
   font-family: sans-serif;
+  background: url(../img/space.jpg);
+  background-repeat: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #B53535;
+  height: 7em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 #header {
-  background-color: rgba(200, 200, 200, .3);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
 }
 
-.red-pin {
-  padding: 1em;
-  z-index: -500;
-}
+#skull {
+  float: left;
 
-.animal-card {
-  width: 400px;
 }
 
 .animal-card-content-wrapper {
@@ -33,10 +48,11 @@ body {
 
 .animal-card-content-wrapper:focus {
     pointer-events: none;
+    outline: none !important;
 }
 
 #abbotts-booby-click:focus #abbotts-booby,
-#ailao-spiny-toad-click:focus #ailao-spiny-toad
+#ailao-spiny-toad-click:focus #ailao-spiny-toad,
 #black-and-gold-tanager-click:focus #black-and-gold-tanager,
 #bowmouth-guitarfish-click:focus #bowmouth-guitarfish,
 #chacoan-naked-tailed-armadillo-click:focus #chacoan-naked-tailed-armadillo,
@@ -52,11 +68,13 @@ body {
 
 .animal-card-content {
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s;
-
+    background-color: #20963B;
+    border-radius: 10%;
+    padding: 0 2em 1em 2em;
 }
 
 .animal-image {
@@ -73,6 +91,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1000;
+  border-radius: 50%;
 }
 
 .abbotts-booby {
@@ -133,6 +152,10 @@ body {
   position: absolute;
   top: 39em;
   left: 94em;
+}
+
+a:visited, a:link {
+  color: inherit;
 }
 
 h2 {
