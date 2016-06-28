@@ -19,7 +19,7 @@ body {
 }
 
 .animal-card {
-  /*display: none;*/
+  width: 400px;
 }
 
 .animal-card-content-wrapper {
@@ -28,18 +28,23 @@ body {
 }
 
 .animal-card-content-wrapper:before {
-    content: url(../img/red-pin.png); /*pin*/
+    content: url(../img/red-pin.png);
 }
 
 .animal-card-content-wrapper:focus {
     pointer-events: none;
 }
 
-/*.animal-card-content-wrapper:focus .animal-card-content */
 #abbotts-booby-click:focus #abbotts-booby,
 #ailao-spiny-toad-click:focus #ailao-spiny-toad
 #black-and-gold-tanager-click:focus #black-and-gold-tanager,
-#bowmouth-guitarfish-click:focus #bowmouth-guitarfish {
+#bowmouth-guitarfish-click:focus #bowmouth-guitarfish,
+#chacoan-naked-tailed-armadillo-click:focus #chacoan-naked-tailed-armadillo,
+#eyrean-grasswren-click:focus #eyrean-grasswren,
+#great-curassow-click:focus #great-curassow,
+#hoolock-gibbon-click:focus #hoolock-gibbon,
+#zululand-black-millipede-click:focus #zululand-black-millipede,
+#yellow-footed-rock-wallaby-click:focus #yellow-footed-rock-wallaby {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -51,6 +56,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: visibility 0.5s;
+
 }
 
 .animal-image {
@@ -93,61 +99,41 @@ body {
   left: 91em;
 }
 
-.chacoan-naked-tailed-armadillo, #chacoan-naked-tailed-armadillo {
+.chacoan-naked-tailed-armadillo {
   position: absolute;
   top: 33em;
   left: 33em;
 }
 
-.eyrean-grasswren, #eyrean-grasswren {
+.eyrean-grasswren {
   position: absolute;
   top: 37em;
   left: 91em;
 }
 
-.great-curassow, #great-curassow {
+.great-curassow {
   position: absolute;
   top: 23em;
   left: 33em;
 }
 
-.hoolock-gibbon, #hoolock-gibbon {
+.hoolock-gibbon {
   position: absolute;
   top: 16em;
   left: 78em;
 }
 
-.zululand-black-millipede, #zululand-black-millipede {
+.zululand-black-millipede {
   position: absolute;
   top: 35em;
   left: 58em;
 }
 
-.yellow-footed-rock-wallaby, #yellow-footed-rock-wallaby {
+.yellow-footed-rock-wallaby {
   position: absolute;
   top: 39em;
   left: 94em;
 }
-
-.animal-card {
-  width: 400px;
-  background-color: rgba(255, 255, 204, .8);
-  padding: 1em 2em 2em 2em;
-  border-radius: 3em;
-}
-
-/*.abbotts-booby:hover + #abbotts-booby,
-.ailao-spiny-toad:hover + #ailao-spiny-toad,
-.black-and-gold-tanager:hover + #black-and-gold-tanager,
-.bowmouth-guitarfish:hover + #bowmouth-guitarfish,
-.chacoan-naked-tailed-armadillo:hover + #chacoan-naked-tailed-armadillo,
-.eyrean-grasswren:hover + #eyrean-grasswren,
-.great-curassow:hover + #great-curassow,
-.hoolock-gibbon:hover + #hoolock-gibbon,
-.zululand-black-millipede:hover + #zululand-black-millipede,
-.yellow-footed-rock-wallaby:hover + #yellow-footed-rock-wallaby {
-  display:block;
-}*/
 
 h2 {
   text-align: center;
