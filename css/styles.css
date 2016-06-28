@@ -35,7 +35,11 @@ body {
     pointer-events: none;
 }
 
-.animal-card-content-wrapper:focus .animal-card-content {
+/*.animal-card-content-wrapper:focus .animal-card-content */
+#abbotts-booby-click:focus #abbotts-booby,
+#ailao-spiny-toad-click:focus #ailao-spiny-toad
+#black-and-gold-tanager-click:focus #black-and-gold-tanager,
+#bowmouth-guitarfish-click:focus #bowmouth-guitarfish {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -71,19 +75,19 @@ body {
   left: 85em;
 }
 
-.ailao-spiny-toad, #ailao-spiny-toad {
+.ailao-spiny-toad{
   position: absolute;
   top: 16em;
   left: 82em;
 }
 
-.black-and-gold-tanager, #black-and-gold-tanager {
+.black-and-gold-tanager {
   position: absolute;
   top: 23em;
   left: 29em;
 }
 
-.bowmouth-guitarfish, #bowmouth-guitarfish {
+.bowmouth-guitarfish {
   position: absolute;
   top: 26em;
   left: 91em;
