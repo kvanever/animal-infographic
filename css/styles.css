@@ -1,13 +1,29 @@
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
 body {
   background-color: white;
+  font-family: sans-serif;
 }
 
 #header {
   background-color: rgba(200, 200, 200, .3);
 }
 
-.animal-image {
+.red-pin {
+  padding: 1em;
+  z-index: -500;
+}
+
+.animal-card {
   display: none;
+}
+
+.animal-image {
+  border-radius: 3em;
 }
 
 .container {
@@ -19,65 +35,90 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1000;
 }
 
-.abbotts-booby {
+.abbotts-booby, #abbotts-booby {
   position: absolute;
   top: 31em;
   left: 85em;
 }
 
-.ailao-spiny-toad {
+.ailao-spiny-toad, #ailao-spiny-toad {
   position: absolute;
   top: 16em;
   left: 82em;
 }
 
-.black-and-gold-tanager {
+.black-and-gold-tanager, #black-and-gold-tanager {
   position: absolute;
   top: 23em;
   left: 29em;
 }
 
-.bowmouth-guitarfish {
+.bowmouth-guitarfish, #bowmouth-guitarfish {
   position: absolute;
   top: 26em;
   left: 91em;
 }
 
-.chacoan-naked-tailed-armadillo {
+.chacoan-naked-tailed-armadillo, #chacoan-naked-tailed-armadillo {
   position: absolute;
   top: 33em;
   left: 33em;
 }
 
-.eyrean-grasswren {
+.eyrean-grasswren, #eyrean-grasswren {
   position: absolute;
   top: 37em;
   left: 91em;
 }
 
-.great-curassow {
+.great-curassow, #great-curassow {
   position: absolute;
   top: 23em;
   left: 33em;
 }
 
-.hoolock-gibbon {
+.hoolock-gibbon, #hoolock-gibbon {
   position: absolute;
   top: 16em;
   left: 78em;
 }
 
-.zululand-black-millipede {
+.zululand-black-millipede, #zululand-black-millipede {
   position: absolute;
   top: 35em;
   left: 58em;
 }
 
-.yellow-footed-rock-wallaby {
+.yellow-footed-rock-wallaby, #yellow-footed-rock-wallaby {
   position: absolute;
   top: 39em;
   left: 94em;
+}
+
+.animal-card {
+  width: 400px;
+  background-color: rgba(255, 255, 204, .8);
+  padding: 1em 2em 2em 2em;
+  border-radius: 3em;
+}
+
+.abbotts-booby:hover + #abbotts-booby,
+.ailao-spiny-toad:hover + #ailao-spiny-toad,
+.black-and-gold-tanager:hover + #black-and-gold-tanager,
+.bowmouth-guitarfish:hover + #bowmouth-guitarfish,
+.chacoan-naked-tailed-armadillo:hover + #chacoan-naked-tailed-armadillo,
+.eyrean-grasswren:hover + #eyrean-grasswren,
+.great-curassow:hover + #great-curassow,
+.hoolock-gibbon:hover + #hoolock-gibbon,
+.zululand-black-millipede:hover + #zululand-black-millipede,
+.yellow-footed-rock-wallaby:hover + #yellow-footed-rock-wallaby {
+  display:block;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: none;
 }
