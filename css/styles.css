@@ -19,7 +19,34 @@ body {
 }
 
 .animal-card {
-  display: none;
+  /*display: none;*/
+}
+
+.animal-card-content-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.animal-card-content-wrapper:before {
+    content: url(../img/red-pin.png); /*pin*/
+}
+
+.animal-card-content-wrapper:focus {
+    pointer-events: none;
+}
+
+.animal-card-content-wrapper:focus .animal-card-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.animal-card-content {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
 }
 
 .animal-image {
@@ -105,7 +132,7 @@ body {
   border-radius: 3em;
 }
 
-.abbotts-booby:hover + #abbotts-booby,
+/*.abbotts-booby:hover + #abbotts-booby,
 .ailao-spiny-toad:hover + #ailao-spiny-toad,
 .black-and-gold-tanager:hover + #black-and-gold-tanager,
 .bowmouth-guitarfish:hover + #bowmouth-guitarfish,
@@ -116,7 +143,7 @@ body {
 .zululand-black-millipede:hover + #zululand-black-millipede,
 .yellow-footed-rock-wallaby:hover + #yellow-footed-rock-wallaby {
   display:block;
-}
+}*/
 
 h2 {
   text-align: center;
