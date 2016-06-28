@@ -1,9 +1,83 @@
 body {
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: white;
 }
 
 #header {
   background-color: rgba(200, 200, 200, .3);
+}
+
+.animal-image {
+  display: none;
+}
+
+.container {
+  position: relative;
+  display: inline;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.abbotts-booby {
+  position: absolute;
+  top: 31em;
+  left: 85em;
+}
+
+.ailao-spiny-toad {
+  position: absolute;
+  top: 16em;
+  left: 82em;
+}
+
+.black-and-gold-tanager {
+  position: absolute;
+  top: 23em;
+  left: 29em;
+}
+
+.bowmouth-guitarfish {
+  position: absolute;
+  top: 26em;
+  left: 91em;
+}
+
+.chacoan-naked-tailed-armadillo {
+  position: absolute;
+  top: 33em;
+  left: 33em;
+}
+
+.eyrean-grasswren {
+  position: absolute;
+  top: 37em;
+  left: 91em;
+}
+
+.great-curassow {
+  position: absolute;
+  top: 23em;
+  left: 33em;
+}
+
+.hoolock-gibbon {
+  position: absolute;
+  top: 16em;
+  left: 78em;
+}
+
+.zululand-black-millipede {
+  position: absolute;
+  top: 35em;
+  left: 58em;
+}
+
+.yellow-footed-rock-wallaby {
+  position: absolute;
+  top: 39em;
+  left: 94em;
 }
